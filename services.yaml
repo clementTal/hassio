@@ -1,0 +1,16 @@
+broadlink:
+  set_schedule:
+    description: set a new schedule schemat.
+    fields:
+      weekday:
+        description: schemat for weekdays.
+        example: '[{"start_hour":"06", "start_minute":"30", "temp":"20"}, {"start_hour":"09", "start_minute":"00", "temp":"17"}, {"start_hour":"12", "start_minute":"00", "temp":"20" }, {"start_hour":"14", "start_minute":"00", "temp":"17"}, {"start_hour":"18", "start_minute":"00", "temp":"20" }, {"start_hour":22, "start_minute":30, "temp":17}]'
+      weekend:
+        description: schemat for weekdays.
+        example: '[{"start_hour":"08", "start_minute":"30", "temp":"20"}, {"start_hour":"23", "start_minute":"00", "temp":"17"}]'
+  set_advanced_conf:
+    description: change thermostat adanced conf.
+    fields:
+      advanced_config:
+        description: json containing the new config.
+        example: '{"advanced_config":{"loop_mode": 0, "sen": 0, "osv": 42, "dif": 2, "svh": 35, "svl": 5, "adj": 0.5, "fre": 0, "pon": 0}}'
